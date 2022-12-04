@@ -16,9 +16,53 @@
       crossorigin="anonymous"
     ></script>
     <title>Pet Landing Challenge</title>
-    <style></style>
+    <style>
+      html {
+        border: 20px solid wheat;
+      }
+      body {
+        font-family: monospace;
+      }
+      img {
+        margin: 20px 80px;
+        width: 300px;
+        height: 504px;
+      }
+      .main-info-links {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        padding: 0;
+      }
+      .header {
+        font-size: 20px;
+      }
+      .header-links {
+        padding: 0 40px;
+        white-space: nowrap;
+      }
+      .header-name {
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="main-info-links">
+      <div class="container d-flex justify-content-between">
+        <div class="row d-flex header">
+          <div class="col text-start header-name">
+            <strong>Devon Rex's life</strong>
+          </div>
+        </div>
+        <div class="row text-center header">
+          <dov class="col header-links">Home</dov>
+          <div class="col header-links">About Scott</div>
+          <div class="col header-links">About Houdini</div>
+          <div class="col header-links">Their life together</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
