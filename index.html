@@ -4,17 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Pet Landing Challenge</title>
     <style>
       html {
@@ -22,6 +15,7 @@
       }
       body {
         margin-top: 50px;
+        margin-bottom: 50px;
         font-family: monospace;
       }
       img {
@@ -32,15 +26,7 @@
       p {
         font-size: 20px;
       }
-      .main-info-links {
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        padding: 0;
-      }
-      .header {
+      .header, .fixed-bottom {
         font-size: 20px;
         background: wheat;
       }
@@ -49,15 +35,30 @@
         padding: 8px 20px;
         white-space: nowrap;
       }
-      .header-name {
-        font-size: 30px;
-      }
       .navbar-brand {
         padding: 0 20px;
       }
+      .fixed-bottom{
+        margin: 0 auto;
+        padding: auto;
+      }
+      .little-scott-img{
+        margin: 0 auto;
+        padding: 0;
+        width: 200px;
+        height: 315px;
+      }
+      .scott-link, .houdini-link{
+        
+        color: black;
+      }
+      .scott-link:hover,.houdini-link:hover{
+        text-decoration: none;
+        color: black;
+      }
     </style>
   </head>
-  <body>
+  <body class="text-center">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top header">
       <a class="navbar-brand" href="/index.html">Devon Rex's life</a>
       <button
@@ -85,6 +86,7 @@
     <div class="cats text-center d-flex justify-content-center">
       
       <div class="houdi">
+        <a href="/index.html#life-houdini" class="houdini-link">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/356/original/Houdini.jpg?1670171496"
           alt="Houdini's photo "
@@ -92,8 +94,11 @@
           class="image-fluid border-none rounded"
         />
         <p>Houdini</p>
+      </a>
       </div>
+
       <div class="scott">
+        <a href="/index.html#life-scott" class="scott-link">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/358/original/Scott.jpg?1670172224"
           alt="Scott's photo "
@@ -101,8 +106,37 @@
           class="image-fluid border-none rounded"
         />
         <p>Scott</p>
+      </a>
       </div>
       
     </div>
+    <div class="life-scott">
+      <h1 id="life-scott">Scott's life</h1>
+      <div class="row">
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/021/original/scott1.png?1670854953" alt="Smol criminal" class="little-scott-img image-fluid border-none rounded"></div>
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/020/original/scott2.gif?1670854570" alt="" class="little-scott-img image-fluid border-none rounded"></div>
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/018/original/scott3-2.gif?1670854433" alt="" class="little-scott-img image-fluid border-none rounded"></div>
+      </div>
+      <p>
+        Mr.Scott was born in Russian Devon Rex family - Silver Losk. From the very first day he was a valuable member of our family. He participated in every event that has occured and always spoke up his opinion regarding different matters, showing his involvment, sitting on "his" chair by the table.
+      </p>
+    </div>
+
+    <div class="life-houdini">
+      <h1 id="life-houdini">Houdini's life</h1>
+      <div class="row">
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/023/original/houdi1.png?1670855797" alt="Smol criminal" class="little-scott-img image-fluid border-none rounded"></div>
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/025/original/houdi2.png?1670856403" alt="" class="little-scott-img image-fluid border-none rounded"></div>
+        <div class="col"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/026/original/houdi3.png?1670856578" alt="" class="little-scott-img image-fluid border-none rounded"></div>
+      </div>
+      <p>
+        
+      </p>
+    </div>
+    <div class="footer ">
+    <nav class="navbar fixed-bottom navbar-light ">
+      <a class="navbar-brand" href="/index.html">links to social media accounts</a>
+    </nav>
+  </div>
   </body>
 </html>
